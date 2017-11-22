@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BCCA075-AB17-419D-A2B6-E09CCADD626A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Filtro_de_Ramos</RootNamespace>
+    <AssemblyName>Filtro de Ramos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Filtro_de_Ramos.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ApplicationIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controlador\ControladorCarrera.cs" />
+    <Compile Include="Controlador\ControladorDetalleS.cs" />
+    <Compile Include="Controlador\ControladorDetalle.cs" />
+    <Compile Include="Controlador\ControladorEscuela.cs" />
+    <Compile Include="Controlador\ControladorRamo.cs" />
+    <Compile Include="Controlador\ControladorSala.cs" />
+    <Compile Include="Controlador\ControladorSeccion.cs" />
+    <Compile Include="Controlador\ControladorSede.cs" />
+    <Compile Include="Controlador\ControladorSemestre.cs" />
+    <Compile Include="Modelo\Carrera.cs" />
+    <Compile Include="Modelo\Connection.cs" />
+    <Compile Include="Modelo\DetalleS.cs" />
+    <Compile Include="Modelo\Detalle.cs" />
+    <Compile Include="Modelo\Escuela.cs" />
+    <Compile Include="Modelo\Ramo.cs" />
+    <Compile Include="Modelo\Sala.cs" />
+    <Compile Include="Modelo\Seccion.cs" />
+    <Compile Include="Modelo\Sede.cs" />
+    <Compile Include="Modelo\Semestre.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\FormCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormCarrera.Designer.cs">
+      <DependentUpon>FormCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormDetalle.Designer.cs">
+      <DependentUpon>FormDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormEscuela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormEscuela.Designer.cs">
+      <DependentUpon>FormEscuela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormFiltroRamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormFiltroRamos.Designer.cs">
+      <DependentUpon>FormFiltroRamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormRamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormRamo.Designer.cs">
+      <DependentUpon>FormRamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormSala.Designer.cs">
+      <DependentUpon>FormSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormSeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormSeccion.Designer.cs">
+      <DependentUpon>FormSeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormSede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormSede.Designer.cs">
+      <DependentUpon>FormSede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormSemestre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormSemestre.Designer.cs">
+      <DependentUpon>FormSemestre.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vista\FormCarrera.resx">
+      <DependentUpon>FormCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormDetalle.resx">
+      <DependentUpon>FormDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormEscuela.resx">
+      <DependentUpon>FormEscuela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormFiltroRamos.resx">
+      <DependentUpon>FormFiltroRamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormRamo.resx">
+      <DependentUpon>FormRamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormSala.resx">
+      <DependentUpon>FormSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormSeccion.resx">
+      <DependentUpon>FormSeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormSede.resx">
+      <DependentUpon>FormSede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormSemestre.resx">
+      <DependentUpon>FormSemestre.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\times.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
