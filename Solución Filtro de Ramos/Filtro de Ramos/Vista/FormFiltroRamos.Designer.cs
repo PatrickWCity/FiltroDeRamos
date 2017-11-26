@@ -71,6 +71,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 257);
             this.dataGridView1.Name = "dataGridView1";
@@ -142,6 +143,8 @@
             // 
             // CB_Carrera
             // 
+            this.CB_Carrera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CB_Carrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Carrera.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Carrera.FormattingEnabled = true;
@@ -152,6 +155,8 @@
             // 
             // CB_Sede
             // 
+            this.CB_Sede.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CB_Sede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Sede.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Sede.FormattingEnabled = true;
@@ -162,6 +167,8 @@
             // 
             // CB_Escuela
             // 
+            this.CB_Escuela.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CB_Escuela.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Escuela.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Escuela.FormattingEnabled = true;
@@ -172,6 +179,8 @@
             // 
             // CB_Sala
             // 
+            this.CB_Sala.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CB_Sala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Sala.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Sala.FormattingEnabled = true;
@@ -182,6 +191,8 @@
             // 
             // CB_Seccion
             // 
+            this.CB_Seccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CB_Seccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Seccion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Seccion.FormattingEnabled = true;
@@ -192,6 +203,8 @@
             // 
             // CB_Semestre
             // 
+            this.CB_Semestre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CB_Semestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Semestre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Semestre.FormattingEnabled = true;
@@ -202,6 +215,8 @@
             // 
             // CB_Ramo
             // 
+            this.CB_Ramo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CB_Ramo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Ramo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Ramo.FormattingEnabled = true;
