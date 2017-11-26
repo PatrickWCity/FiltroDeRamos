@@ -47,5 +47,12 @@ namespace Filtro_de_Ramos.Controlador
             return db.Query<DetalleS>("sp_consultarTodosDetalleS", commandType: CommandType.StoredProcedure).ToList();
             }
         }
+        public List<DetalleS> Filtrar(string ramo, string semestre, string seccion, string sala, string escuela, string sede, string carrera)
+        {
+            using (IDbConnection db = new SqlConnection(con.connectionString))
+            {
+                return db.Query<DetalleS>("sp_Filtro", new { Ramo = ramo, Semestre = semestre, Seccion = seccion, Sala =sala,Escuela=escuela, Sede=sede, carrera=carrera }, commandType: CommandType.StoredProcedure).ToList();
+            }
+        }
     }
 }

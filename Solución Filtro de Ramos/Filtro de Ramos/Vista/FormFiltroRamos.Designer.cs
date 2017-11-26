@@ -142,6 +142,7 @@
             // 
             // CB_Carrera
             // 
+            this.CB_Carrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Carrera.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Carrera.FormattingEnabled = true;
             this.CB_Carrera.Location = new System.Drawing.Point(209, 224);
@@ -151,6 +152,7 @@
             // 
             // CB_Sede
             // 
+            this.CB_Sede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Sede.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Sede.FormattingEnabled = true;
             this.CB_Sede.Location = new System.Drawing.Point(209, 188);
@@ -160,6 +162,7 @@
             // 
             // CB_Escuela
             // 
+            this.CB_Escuela.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Escuela.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Escuela.FormattingEnabled = true;
             this.CB_Escuela.Location = new System.Drawing.Point(209, 152);
@@ -169,6 +172,7 @@
             // 
             // CB_Sala
             // 
+            this.CB_Sala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Sala.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Sala.FormattingEnabled = true;
             this.CB_Sala.Location = new System.Drawing.Point(209, 116);
@@ -178,6 +182,7 @@
             // 
             // CB_Seccion
             // 
+            this.CB_Seccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Seccion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Seccion.FormattingEnabled = true;
             this.CB_Seccion.Location = new System.Drawing.Point(209, 80);
@@ -187,6 +192,7 @@
             // 
             // CB_Semestre
             // 
+            this.CB_Semestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Semestre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Semestre.FormattingEnabled = true;
             this.CB_Semestre.Location = new System.Drawing.Point(209, 44);
@@ -196,6 +202,7 @@
             // 
             // CB_Ramo
             // 
+            this.CB_Ramo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Ramo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Ramo.FormattingEnabled = true;
             this.CB_Ramo.Location = new System.Drawing.Point(209, 8);

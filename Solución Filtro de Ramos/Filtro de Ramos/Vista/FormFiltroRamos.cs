@@ -1,4 +1,5 @@
 ﻿using Filtro_de_Ramos.Controlador;
+using Filtro_de_Ramos.Modelo;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -16,6 +17,10 @@ namespace Filtro_de_Ramos.Vista
         ControladorSede controladorSede = new ControladorSede();
         ControladorSemestre controladorSemestre = new ControladorSemestre();
         int swbn, car, esc, ram, sal, sec, sed, sem;
+        string ramo, semestre, seccion, sala, escuela, sede, carrera = null;
+
+
+
         public FormFiltroRamos()
         {
             InitializeComponent();
@@ -91,11 +96,87 @@ namespace Filtro_de_Ramos.Vista
         }
         private void B_Refrescar_Click(object sender, System.EventArgs e)
         {
-
+            if (TCB_Ramo.Checked == true)
+            {
+                ramo = CB_Ramo.Text;
+            }
+            else if (TCB_Ramo.Checked == false)
+            {
+                ramo = null;
+            }
+            if (TCB_Semestre.Checked == true)
+            {
+                semestre = CB_Semestre.Text;
+            }
+            else if (TCB_Semestre.Checked == false)
+            {
+                semestre = null;
+            }
+            if (TCB_Seccion.Checked == true)
+            {
+                seccion = CB_Seccion.Text;
+            }
+            else if(TCB_Seccion.Checked == false)
+            {
+                seccion = null;
+            }
+            if (TCB_Sala.Checked == true)
+            {
+                sala = CB_Sala.Text;
+            }
+            else if (TCB_Sala.Checked == false)
+            {
+                sala = null;
+            }
+            if (TCB_Escuela.Checked == true)
+            {
+                escuela = CB_Escuela.Text;
+            }
+            else if (TCB_Escuela.Checked == false)
+            {
+                escuela = null;
+            }
+            if (TCB_Sede.Checked == true)
+            {
+                sede = CB_Sede.Text;
+            }
+            else if (TCB_Sede.Checked == false)
+            {
+                sede = null;
+            }
+            if (TCB_Carrera.Checked == true)
+            {
+                carrera = CB_Carrera.Text;
+            }
+            else if (TCB_Carrera.Checked == false)
+            {
+                carrera = null;
+            }
+            dataGridView1.DataSource = controladorDetalleS.Filtrar(ramo, semestre, seccion, sala, escuela, sede, carrera);
         }
         private void B_Restablacer_Click(object sender, System.EventArgs e)
         {
-
+            ramo = null;
+            semestre = null;
+            seccion = null;
+            sala = null;
+            escuela = null;
+            sede = null;
+            carrera = null;
+            CB_Ramo.SelectedIndex = 0;
+            CB_Semestre.SelectedIndex = 0;
+            CB_Seccion.SelectedIndex = 0;
+            CB_Sala.SelectedIndex = 0;
+            CB_Escuela.SelectedIndex = 0;
+            CB_Sede.SelectedIndex = 0;
+            CB_Carrera.SelectedIndex = 0;
+            TCB_Ramo.Checked = false;
+            TCB_Semestre.Checked = false;
+            TCB_Seccion.Checked = false;
+            TCB_Sala.Checked = false;
+            TCB_Escuela.Checked = false;
+            TCB_Sede.Checked = false;
+            TCB_Carrera.Checked = false;
         }
         private void B_Salir_Click(object sender, System.EventArgs e)
         {
