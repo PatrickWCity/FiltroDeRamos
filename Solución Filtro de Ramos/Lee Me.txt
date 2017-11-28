@@ -1,0 +1,16 @@
+Crear un Usuario: FitroRamos con Clave:123456
+
+ejecutar el archivo Ramito.sql para crear la base de datos
+
+Mappear el Usuario a la Base de Datos Ramito
+con los Roles
+db_datareader
+db_datawriter
+db_ddladmin
+db_owner
+
+correr el programa Filtro de Ramos.exe
+En el Menu
+Ingresar Carrera, Escuela, Ramo, Sala, Seccion, Sede, Semestre con los Mantenedores
+Ingresar Detalle con el Mantenedor Especial
+Filtrar con en Filtro de Ramos.
